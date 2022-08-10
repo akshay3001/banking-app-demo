@@ -20,7 +20,8 @@
       ],
       "@banking/retail-accounts-overview": [
         "libs/retail-accounts-overview/src/index.ts"
-      ]
+      ],
+      "@banking/shared": ["libs/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
