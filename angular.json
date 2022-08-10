@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "business-accounts-overview": "libs/business-accounts-overview",
     "business-banking": "apps/business-banking",
     "business-banking-e2e": "apps/business-banking-e2e",
     "retail-accounts-overview": "libs/retail-accounts-overview",

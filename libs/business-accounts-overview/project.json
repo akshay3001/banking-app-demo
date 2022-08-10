@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/business-accounts-overview/src",
+  "prefix": "retail-banking",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/business-accounts-overview"],
+      "options": {
+        "project": "libs/business-accounts-overview/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/business-accounts-overview/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/business-accounts-overview/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/business-accounts-overview"],
+      "options": {
+        "jestConfig": "libs/business-accounts-overview/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/business-accounts-overview/**/*.ts",
+          "libs/business-accounts-overview/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

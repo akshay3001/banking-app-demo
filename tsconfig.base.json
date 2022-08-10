@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@banking/business-accounts-overview": [
+        "libs/business-accounts-overview/src/index.ts"
+      ],
       "@banking/retail-accounts-overview": [
         "libs/retail-accounts-overview/src/index.ts"
       ]
