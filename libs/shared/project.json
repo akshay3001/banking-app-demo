@@ -1,7 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/shared/src",
-  "prefix": "retail-banking",
+  "prefix": "banking",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",
