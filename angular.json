@@ -4,6 +4,7 @@
   "projects": {
     "business-banking": "apps/business-banking",
     "business-banking-e2e": "apps/business-banking-e2e",
+    "retail-accounts-overview": "libs/retail-accounts-overview",
     "retail-banking": "apps/retail-banking",
     "retail-banking-e2e": "apps/retail-banking-e2e"
   }
