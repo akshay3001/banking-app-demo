@@ -5,5 +5,6 @@ import { RetailAccountsOverviewComponent } from './retail-accounts-overview/reta
 @NgModule({
   imports: [CommonModule],
   declarations: [RetailAccountsOverviewComponent],
+  exports: [RetailAccountsOverviewComponent],
 })
 export class RetailAccountsOverviewModule {}

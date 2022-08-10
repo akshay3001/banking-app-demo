@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BusinessAccountsOverviewComponent } from '@banking/business-accounts-overview';
-import { HeadingComponent } from '@banking/shared';
+import { BusinessAccountsOverviewModule } from '@banking/business-accounts-overview';
+import { SharedModule } from '@banking/shared';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [AppComponent, HeadingComponent, BusinessAccountsOverviewComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, BusinessAccountsOverviewModule, SharedModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -5,5 +5,6 @@ import { BusinessAccountsOverviewComponent } from './business-accounts-overview/
 @NgModule({
   imports: [CommonModule],
   declarations: [BusinessAccountsOverviewComponent],
+  exports: [BusinessAccountsOverviewComponent],
 })
 export class BusinessAccountsOverviewModule {}
