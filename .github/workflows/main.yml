@@ -17,8 +17,8 @@ jobs:
       - uses: nrwl/nx-set-shas@v2
       - run: npm ci
 
-      - run: npx nx workspace-lint
-      - run: npx nx format:check
-      - run: npx nx affected --target=lint --parallel=3
-      - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
-      - run: npx nx affected --target=build --parallel=3
+      - run: NX_CLOUD_AUTH_TOKEN=${{ env.NX_CLOUD_AUTH_TOKEN }} npx nx workspace-lint
+      - run: NX_CLOUD_AUTH_TOKEN=${{ env.NX_CLOUD_AUTH_TOKEN }} npx nx format:check
+      - run: NX_CLOUD_AUTH_TOKEN=${{ env.NX_CLOUD_AUTH_TOKEN }} npx nx affected --target=lint --parallel=3
+      - run: NX_CLOUD_AUTH_TOKEN=${{ env.NX_CLOUD_AUTH_TOKEN }} npx nx affected --target=test --parallel=3 --ci --code-coverage
+      - run: NX_CLOUD_AUTH_TOKEN=${{ env.NX_CLOUD_AUTH_TOKEN }} npx nx affected --target=build --parallel=3
