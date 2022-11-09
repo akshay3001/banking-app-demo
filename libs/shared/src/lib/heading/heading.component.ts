@@ -6,4 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeadingComponent {
+  constructor() {
+    console.log('Heading Component log');
+  }
 }
