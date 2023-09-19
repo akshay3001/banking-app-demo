@@ -5,5 +5,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: ` <p>retail-accounts-overview works!</p> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RetailAccountsOverviewComponent{
+export class RetailAccountsOverviewComponent {
+  testing = 123;
 }
